@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cb06bc0e62.js" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+          <div class="translateDiv" id="en2"></div>
+            <section class="section-form" id="contacto">
+
+                <div class="form-container">
+    
+                    <form enctype="multipart/form-data"  id="Form-data" method="POST">
+                        <h1 class="contact-header lang" id="form1">Contacto</h1>
+                        <div>
+                            <label for="name" class="lang" id="form2">Nombre | Apellido</label>
+                            <input type="text" id="form-name" name="name" placeholder="Jose Fernandez">
+                            <i class=" fas fa-question-circle form-check form-check-grey tooltip " aria-hidden="true">
+                                <letra id="toolt1" class="tooltiptext lang">El campo nombre no debe estar vacío, ejemplo
+                                    "Juan".</letra>
+                            </i>
+                            <span>.</span>
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="text" id="form-email" name="email" placeholder="Example@gmail.com">
+                            <i class=" fas fa-question-circle form-check form-check-grey tooltip " aria-hidden="true">
+                                <letra id="toolt2" class="tooltiptext lang">El campo email debe ser del formato
+                                    "ejemplo@ejemplo.com".
+                                </letra>
+                            </i>
+                            <span>.</span>
+                        </div>
+                        <div>
+                            <label for="phone" class="lang" id="form3">Teléfono</label>
+                            <input type="text" id="form-phone" name="phone" placeholder="5492215628429">
+                            <i class=" fas fa-question-circle form-check form-check-grey tooltip " aria-hidden="true">
+                                <letra id="toolt3" class="tooltiptext lang">El campo telefono debe incluir prefijos "+54 9",
+                                    dependiendo el
+                                    país. </letra>
+                            </i>
+                            <span>.</span>
+                        </div>
+                        <div>
+                            <label for="textarea" id="form4" class="lang">Mensaje</label>
+                            <textarea name="message" id="form-message" placeholder="Ingresá tu consulta ..."></textarea>
+                            <i class=" fas fa-question-circle form-check form-check-grey tooltip " aria-hidden="true">
+                                <letra id="toolt4" class="tooltiptext lang">El campo consulta debe incluir como mínimo 50
+                                    caracteres.</letra>
+                            </i>
+                            <span>.</span>
+                        </div>
+                        
+                        <div class="btn-left">
+                            <button id="formSubmit" type="submit" class="button lang g-recaptcha" name="submit" data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" 
+                            data-callback='onSubmit' 
+                            data-action='submit' onclick="submitFormAjax()">Enviar
+                            <span id="formSubmitText" class="button__text"></span></button>
+                        </div>
+                        <input type="hidden" name="recaptcha" id="google-response-token">
+                        <div id="sent-notification"></div>
+                    </form>
+    
+                </div>
+            </section>
+        </main>
+    </body>
+  <script src="front.js"></script>
+</html>
+https://github.com/cristiangomezdev/php_contact.git

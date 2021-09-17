@@ -1,0 +1,367 @@
+body{
+    background-color:#D2D8E7;
+}
+
+.recaptcha-center{
+  margin: 0 auto;
+  width:300px;
+  height:78px;
+  display:block;
+}
+
+.recaptcha-holder{
+  width:100%;
+  height:78px;
+  display:block;
+}
+
+.btn-left {
+  width: 100%;
+  text-align: center;
+}
+
+.clearfix {
+  clear: both;
+  float: none;
+}
+
+.section-form {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  padding-top: 3.76rem;
+}
+
+.section-form .form-container {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  float: none;
+}
+
+.paypal {
+  margin-top: 10px;
+  height: 25px;
+}
+
+.mercadopago {
+  margin-top: 10px;
+  height: 25px;
+}
+.pay-methods {
+  display: block;
+  height: 80px;
+  background-color: #f9f7f7;
+  justify-content: space-evenly;
+  border-bottom: 7px solid #606e7e;
+  margin-bottom: 0;
+}
+
+.paymethods-title {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 14px;
+  margin-right: 35px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: #112d4e;
+}
+
+.paymethods-right {
+  gap: 4em;
+  display: flex;
+  justify-content: center !important;
+}
+
+.paymethods-right img {
+  margin-top: 10px;
+}
+
+.paymethods-left {
+  width: 250px;
+  gap: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-aside {
+  width: 80%;
+  background: url("../img/form/exampleform.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  height: 300px;
+  margin: 0 auto;
+  float: none;
+}
+
+.form-container {
+  width: 60%;
+  float: right;
+}
+
+.form-container form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+form div label {
+  display: block;
+}
+
+form div span {
+  /* visibility: hidden; */
+  display: block;
+  top: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  color: red;
+  text-align: left;
+}
+
+form div {
+  margin-bottom: 10px;
+
+}
+
+form div label {
+  margin-bottom: 8px;
+}
+
+.form-check {
+  font-size: 19px !important;
+  visibility: visible;
+  position: relative;
+  top: -45px;
+  left: 10px;
+}
+.form-check-grey {
+  color: grey;
+}
+#form-errors {
+ position:relative;
+ top:-20px;
+}
+
+.contact-header {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+  padding: 2rem 0 2rem;
+  text-decoration: underline;
+  color: #112d4e;
+}
+
+#sent-notification{
+  text-align: center;
+}
+
+/* boton spiner */
+
+.button {
+  position: relative;
+  padding: 8px 16px;
+  background: #009579;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+  min-width: 150px;
+  min-height: 60px;
+}
+
+.button:active {
+  background: #007a63;
+
+}
+
+.button__text {
+  display:block;
+  color: #ffffff;
+  transition: all 0.2s;
+  visibility:visible !important;
+}
+
+.button--loading .button__text {
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+.button--loading::after {
+
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border: 4px solid transparent;
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: button-loading-spinner 2s ease infinite;
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
+.nopointer{
+      pointer-events: none;
+}
+.green{
+  background: rgb(57, 155, 57) !important;
+}
+
+@media screen and (min-width: 767px) {
+
+}
+
+input[type="text"],
+textarea {
+  width: 92%;
+  min-height: 50px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-left: 40px;
+  padding-bottom: 5px;
+  transition: 300ms all;
+}
+input[type="text"]:hover {
+  box-shadow: 0px 0px 5px rgb(75, 72, 72) inset;
+}
+
+input[type="text"]::placeholder {
+  font-size: 16px;
+}
+
+textarea {
+  width: 92%;
+  height: 150px;
+  min-width: 90%;
+  max-width: 100%;
+  min-height: 150px;
+  max-height: 300px;
+  margin-bottom: 0px;
+}
+
+.button {
+  background-color: #48639C;
+  /* Green */
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover{
+  background-color: #205a9c;
+}
+@media (min-width: 760px) {
+  /* contacto y pagos */
+
+  .paymethods-title {
+    font-size: 18px;
+  }
+
+  .section-form .form-container {
+    width: 50%;
+  }
+
+  .form-aside {
+    width: 50%;
+    background: url("../img/form/exampleform.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    height: 750px;
+    float: left;
+  }
+}
+
+@media (min-width: 960px) {
+  /* contacto */
+  
+  #sent-notification{
+    text-align:left ;
+  }
+  .recaptcha-center{
+    float:right;
+  }
+  .section-form {
+    width: 80%;
+  }
+
+  .form-aside {
+    width: 50%;
+    margin-left: 0;
+  }
+
+  .form-container {
+    width: 50%;
+  }
+
+
+
+  .clearfix {
+    clear: both;
+    float: none;
+  }
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  top: -45px;
+  left: 10px;
+}
+
+.tooltip .tooltiptext {
+  font-size: 16px;
+  visibility: hidden;
+  width: 240px;
+  min-height: 60px;
+  background-color: #48639C;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px 0;
+  position: absolute;
+  z-index: 99;
+  bottom: -395%;
+  left: 240%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: -14%;
+  left: 10%;
+  transform: rotate(180deg);
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #48639C transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.tooltip:hover {
+  color: #112d4e;
+}

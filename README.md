@@ -1,6 +1,8 @@
 # php_contact ESPAÑOL / ENGLISH
 php poo contact form with backend and frontend. 
 
+// ENGLISH
+
 This is a prototype of a contact form implemented in the Maindevs website, everything is from scratch using the next technologies:
 (Front end)
 - HTML
@@ -19,7 +21,7 @@ the backend contains a class named 'validation' and uses reCaptcha v3 in case of
 When the propertyes are settle, the message will be sent to the database 
 and the ajax response will provide the status to the front end.
 
-////////////////////////////////////////////////////////////////////////////////////////
+// ESPAÑOL
 
 Se implementa un formulario de contacto desde 0
 usando las siguientes tecnologias:

@@ -1,4 +1,4 @@
-# php_contact
+# php_contact ESPAÑOL / ENGLISH
 php poo contact form with backend and frontend. 
 
 This is a prototype of a contact form implemented in the Maindevs website, everything is from scratch using the next technologies:

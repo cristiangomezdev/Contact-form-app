@@ -1,7 +1,7 @@
 # php_contact
 php poo contact form with front end
 
-This is an implementation of a contact form, from scratch using the next technologies:
+This is an implementation of a contact form, everything is from scratch using the next technologies:
 (Front end)
 .HTML
 .CSS

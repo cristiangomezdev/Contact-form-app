@@ -9,7 +9,7 @@ This is an implementation of a contact form, everything is from scratch using th
 -Ajax
 
 (Backend)
--PHP poo
+- PHP poo
 -reCaptcha v3
 -Mysql
 
